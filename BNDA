@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Prêts - BNDA Mali</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- En-tête -->
+  <header>
+    <div class="container">
+      <div class="logo">
+        <img src="logo-bnda.png" alt="BNDA Logo">
+      </div>
+      <nav>
+        <ul>
+          <li><a href="/">Accueil</a></li>
+          <li><a href="/services">Nos Services</a></li>
+          <li><a href="/produits">Nos Produits</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Section Produits - Prêts -->
+  <section id="produit-prets">
+    <div class="container">
+      <h1>Prêts pour les entreprises et les particuliers</h1>
+      <p>Nous vous proposons des solutions de financement adaptées à vos projets. Que vous soyez un particulier ou une entreprise, nos prêts sont conçus pour soutenir vos initiatives.</p>
+
+      <div class="produit-details">
+        <h2>Nos Prêts</h2>
+        <ul>
+          <li><strong>Prêt Agricole :</strong> Financement pour les exploitations agricoles et les projets liés à l’agriculture.</li>
+          <li><strong>Prêt pour PME :</strong> Crédits pour soutenir les petites et moyennes entreprises.</li>
+          <li><strong>Prêt Personnel :</strong> Solutions de financement pour vos projets personnels.</li>
+        </ul>
+      </div>
+
+      <div class="conditions">
+        <h2>Conditions de Prêt</h2>
+        <p>Les prêts sont soumis à des conditions spécifiques, telles que :</p>
+        <ul>
+          <li>Un taux d'intérêt compétitif</li>
+          <li>Des conditions de remboursement flexibles</li>
+          <li>Une période de crédit adaptée à votre projet</li>
+        </ul>
+      </div>
+
+      <div class="formulaire-demande">
+        <h2>Faire une demande de Prêt</h2>
+        <form action="/demande" method="POST">
+          <label for="nom">Nom</label>
+          <input type="text" id="nom" name="nom" required>
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="montant">Montant du prêt</label>
+          <input type="number" id="montant" name="montant" required>
+
+          <label for="projet">Description de votre projet</label>
+          <textarea id="projet" name="projet" rows="4" required></textarea>
+
+          <button type="submit">Soumettre la demande</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pied de page -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 BNDA - Banque Nationale de Développement Agricole. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
